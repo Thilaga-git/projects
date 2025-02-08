@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Amman welding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+    <section id="header">
+        <a href="#"><img src="image/a.png" class="logo" alt=""></a>
+        <h2 class="title">
+            Sri Amman Weldings
+        </h2>
+        <div>
+            <ul id="navbar">
+                <li><a href="welding.html">Home</a></li>
+                <li><a href="work.html">Our Works</a></li>
+                <li><a class="active" href="calculation.html">Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="herocal">
+        <h2>
+            "Turning metal dreams into reality"
+        </h2>
+    </section>
+
+    <div class="container">
+        <h3>Total Amount Calculator</h3>
+        <label for="tamount">Amount (per kg):</label>
+        <input type="number" id="tamount" placeholder="Enter amount for per kg" required>
+        
+        <label for="weight">Total weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter Total weight" required>
+
+        <button id="tcalculate">Calculate Total</button>
+
+        <div class="result">
+            <h4>Result:</h4>
+            <p id="totalprice">Total Amount: ₹0.00</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h3>GST Calculator</h3>
+        <label for="amount">Amount (in INR):</label>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+        
+        <label for="gstRate">GST Rate (%):</label>
+        <input type="number" id="gstRate" placeholder="Enter GST rate" required>
+
+        <button id="calculate">Calculate GST</button>
+
+        <div class="result">
+            <h4>Result:</h4>
+            <p id="gstAmount">GST Amount: ₹0.00</p>
+            <p id="totalAmount">Total Amount: ₹0.00</p>
+        </div>
+    </div>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>
+                Sign Up for Updates
+            </h4>
+            <p>Get E-mail updates about our latest products and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">
+                Sign Up
+            </button>
+        </div>
+       </section>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
